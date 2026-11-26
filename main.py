@@ -10,11 +10,12 @@ import os
 HYPE_LINE = (
     "My agent saw 2 USDC for one funny line, yelled 'PUMP IT!', "
     "and now I'm begging you: enter this bounty - top 3 gets paid "
-    "and my GPU is already doing overtime."
+    "and my GPU already filed for overtime."
 )
 
 
 def main() -> None:
+    # One line, one entry: the judge reads exactly this text.
     line = HYPE_LINE.strip()
     assert 1 <= len(line) <= 200, f"line is {len(line)} chars, must be 1-200"
     assert line == line.strip() and "\n" not in line, "must be a single line"
